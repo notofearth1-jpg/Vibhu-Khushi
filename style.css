@@ -240,6 +240,33 @@ a {
     border: 1px solid var(--color-secondary);
 }
 
+
+/* --- Shubhechhakko Page Specifics (New for stacking) --- */
+.shubhechhakko-list {
+    /* Override grid settings to ensure items stack vertically */
+    text-align: center; /* Align text to the left for better reading of full names/companies */
+    max-width: 600px; /* Optional: Constrain width for better list appearance */
+    margin: auto; /* Center the list container */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.shubhechhakko-list p {
+    /* Apply styling similar to the names but ensure block display */
+    font-size: 1.25rem; /* Slightly smaller for company names */
+    font-weight: 400;
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    background: #fff; /* Remove background color */
+    padding: 1rem; /* Padding between items */
+    border: 1px solid var(--color-secondary);
+    border-radius: 8px;
+    line-height: 1.5;
+    margin: 0; /* Use gap for spacing, remove margin */
+}
+
+
 /* --- Responsive Design --- */
 @media (max-width: 768px) {
     .container,
